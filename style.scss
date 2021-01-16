@@ -34,6 +34,12 @@ header {
   }
 }
 
+.brand-logo {
+  max-width: 20vw;
+  img {
+    width: 100%;
+  }
+}
 .flex {
   display: flex;
   align-items: flex-start;

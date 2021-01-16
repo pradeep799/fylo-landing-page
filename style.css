@@ -17,6 +17,14 @@ header {
   }
 }
 
+.brand-logo {
+  max-width: 20vw;
+}
+
+.brand-logo img {
+  width: 100%;
+}
+
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
