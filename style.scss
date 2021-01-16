@@ -1,0 +1,97 @@
+// Primary
+
+// - Dark Blue (intro and email sign up background): hsl(217, 28%, 15%)
+// - Dark Blue (main background): hsl(218, 28%, 13%)
+// - Dark Blue (footer background): hsl(216, 53%, 9%)
+// - Dark Blue (testimonials background): hsl(219, 30%, 18%)
+
+// ### Accent
+
+// - Cyan (inside call-to-action gradient): hsl(176, 68%, 64%)
+// - Blue (inside call-to-action gradient): hsl(198, 60%, 50%)
+// - Light Red (error): hsl(0, 100%, 63%)
+
+// ### Neutral
+
+// - White: hsl(0, 0%, 100%)
+$darkBlueIntro: hsl(217, 28%, 15%);
+$darkBlueMain: hsl(218, 28%, 13%);
+
+header {
+  background-color: $darkBlueIntro;
+  padding-bottom: 4rem !important;
+
+  position: relative;
+  background-image: url(/images/bg-curvy-desktop.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  @media screen and (max-width: 478px) {
+    background-image: url(/images/bg-curvy-mobile.svg);
+    h2 {
+      font-size: 2rem;
+    }
+  }
+}
+
+.flex {
+  display: flex;
+  align-items: flex-start;
+
+  span {
+    margin-left: 0.5rem;
+  }
+  img {
+    margin-top: 0.2rem;
+  }
+}
+
+.card-container {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card {
+  .flex {
+    align-items: center;
+    margin-top: 0.5rem;
+  }
+}
+.circle.img {
+  width: 5vw;
+  height: 5vw;
+  margin-right: 1rem;
+}
+
+// .bg-image {
+//   position: absolute;
+//   bottom: 0;
+//   z-index: 1;
+// }
+
+main,
+section {
+  padding-top: 4rem !important;
+  background-color: $darkBlueMain;
+}
+
+.myimg {
+  height: 45vh;
+}
+.card {
+  background-color: hsl(219, 30%, 18%);
+}
+.cta {
+  background-color: $darkBlueIntro;
+  padding: 1rem;
+}
+footer {
+  background-color: hsl(216, 53%, 9%);
+}
+.footer {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 6rem;
+  padding-bottom: 2rem;
+}

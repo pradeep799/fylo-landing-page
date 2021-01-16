@@ -1,0 +1,87 @@
+header {
+  background-color: #1c2431;
+  padding-bottom: 4rem !important;
+  position: relative;
+  background-image: url(/images/bg-curvy-desktop.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+@media screen and (max-width: 478px) {
+  header {
+    background-image: url(/images/bg-curvy-mobile.svg);
+  }
+  header h2 {
+    font-size: 2rem;
+  }
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.flex span {
+  margin-left: 0.5rem;
+}
+
+.flex img {
+  margin-top: 0.2rem;
+}
+
+.card-container {
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card .flex {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0.5rem;
+}
+
+.circle.img {
+  width: 5vw;
+  height: 5vw;
+  margin-right: 1rem;
+}
+
+main,
+section {
+  padding-top: 4rem !important;
+  background-color: #181f2a;
+}
+
+.myimg {
+  height: 45vh;
+}
+
+.card {
+  background-color: #202a3c;
+}
+
+.cta {
+  background-color: #1c2431;
+  padding: 1rem;
+}
+
+footer {
+  background-color: #0b1523;
+}
+
+.footer {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 6rem;
+  padding-bottom: 2rem;
+}
+/*# sourceMappingURL=style.css.map */
